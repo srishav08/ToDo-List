@@ -18,7 +18,9 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm start --prefix todolist2",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "cbuild": "npm install --prefix todolist2",
+    "build": "concurrently \"npm install\" \"npm run cbuild\""
   },
   "repository": {
     "type": "git",
